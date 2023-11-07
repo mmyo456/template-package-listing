@@ -1,43 +1,43 @@
-# VPM Package Listing Template
+# VPM 包列表模板
 
-Starter for making your own Package Listings, including automation for building and publishing them.
+用于制作您自己的包列表的入门工具，包括构建和发布它们的自动化。
 
-Once you're all set up, you'll be able to update the `source.json` file, and generate a listing which works in the VPM for delivering updates for all the listed packages.
+完成所有设置后，您将能够更新“source.json”文件，并生成一个在 VPM 中工作的列表，用于为所有列出的包提供更新。
 
-## ▶ Getting Started
+## ▶ 开始使用
 
-* Press [![Use This Template](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)](https://github.com/vrchat-community/template-package-listing/generate)
-to start a new GitHub project based on this template, and follow the directions there. 
-  * Choose a fitting repository name and description.
-  * Set the visibility to 'Public'. You can also choose 'Private' and change it later.
-  * You don't need to select 'Include all branches.'
-* Edit this project on GitHub in your web browser, or clone it repository locally using Git.
-  * If you're unfamiliar with Git and GitHub, [visit GitHub's documentation](https://docs.github.com/en/get-started/quickstart/
+* 按 [![使用此模板](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)]([https://github.com/vrchat- 社区/模板包列表/生成](https://github.com/mmyo456/template-package-listing/generate)）
+基于此模板启动一个新的 GitHub 项目，然后按照其中的说明进行操作。
+   * 选择合适的存储库名称和描述。
+   * 将可见性设置为“公开”。 您还可以选择“私人”并稍后更改。
+   * 您不需要选择“包括所有分支”。
+* 在 Web 浏览器中编辑 GitHub 上的此项目，或使用 Git 将其克隆到本地存储库。
+   * 如果您不熟悉 Git 和 GitHub，[访问 GitHub 的文档](https://docs.github.com/en/get-started/quickstart/
   
-## Setting up the Automation
+## 设置自动化
 
-You'll need to edit some of the files in this template, starting with [`source.json`](source.json):
-- Fill out general information about your listing, such as the `name`, `id`, `author`, `description`, etc.
-- Make sure to update the "url" field on line 4, replacing "vrchat-community" with your GitHub username, and "template-package-listing" with your repo name. This is the link that will be used to download your listing once it's published by GitHub. For example, the user "thupper" who made a repo called "thupper-listing" would update the url to "https://thupper.github.io/thupper-listing/index.json".
-- Update the "url" within "infoLink" (on line 11) with the url of this new repo you've created.
-- If you'd like to include packages hosted on GitHub, specify them in `githubRepos`.
-- If you'd like to include packages hosted elsewhere as a `.zip` file, specify them in `packages`.
-  - You can safely remove either `githubRepos` or `packages` if you're not using them. 
-- Finally, go to the "Settings" page for your repo, then choose "Pages", and look for the heading "Build and deployment". Change the "Source" dropdown from "Deploy from a branch" to "GitHub Actions".
+您需要编辑此模板中的一些文件，从 [`source.json`](source.json) 开始：
+- 填写有关您列表的一般信息，例如“名称”、“id”、“作者”、“描述”等。
+- 确保更新第 4 行的“url”字段，将“vrchat-community”替换为您的 GitHub 用户名，将“template-package-listing”替换为您的存储库名称。 该链接将用于在 GitHub 发布您的列表后下载您的列表。 例如，创建名为“thupper-listing”的存储库的用户“thupper”会将 url 更新为“https://thupper.github.io/thupper-listing/index.json”。
+- 使用您创建的新存储库的 url 更新“infoLink”（第 11 行）中的“url”。
+- 如果您想包含托管在 GitHub 上的包，请在 `githubRepos` 中指定它们。
+- 如果您想将在其他地方托管的包包含为“.zip”文件，请在“packages”中指定它们。
+   - 如果您不使用`githubRepos`或`packages`，您可以安全地删除它们。
+- 最后，转到存储库的“设置”页面，然后选择“页面”，然后查找标题“构建和部署”。 将“源”下拉列表从“从分支部署”更改为“GitHub Actions”。
 
-## 📃 Rebuilding the Listing
+## 📃 重建列表
 
-Whenever you make a change to the `main` branch, or when you trigger it manually, the 'Build Repo Listing' action will make a new index of all the releases available and publish them as a website hosted fore free on GitHub Pages. This listing can be used by the VPM to keep your package up to date, and the generated index page can serve as a simple landing page with info for your package. The URL for your package will be in the format https://username.github.io/repo-name.
+每当您对“main”分支进行更改或手动触发它时，“构建存储库列表”操作都会为所有可用版本创建一个新索引，并将它们发布为在 GitHub Pages 上免费托管的网站。 VPM 可以使用此列表来使您的软件包保持最新状态，并且生成的索引页面可以用作包含软件包信息的简单登录页面。 您的包的 URL 格式为 https://username.github.io/repo-name。
 
-## 🏠 Customizing the Landing Page
+## 🏠 自定义登陆页面
 
-The contents of the `Website` directory can be customized to change the appearance of the landing page. Most of the information will be automatically filled in with information from [`source.json`](source.json). Customizing the landing page by hand is not required.
+可以自定义“网站”目录的内容以更改登录页面的外观。 大部分信息将自动填充来自 [`source.json`](source.json) 的信息。 不需要手动自定义登陆页面。
 
-## Technical Stuff
+## 技术资料
 
-You are welcome to make your own changes to the automation process to make it fit your needs, and you can create Pull Requests if you have some changes you think we should adopt. Here's some more info on the included automation:
+欢迎您对自动化流程进行自己的更改，以使其满足您的需求，如果您认为我们应该采用一些更改，您可以创建拉取请求。 以下是有关所包含的自动化的更多信息：
 
-### Build Listing
+### 构建列表
 [build-listing.yml](.github/workflows/build-listing.yml)
 
-This is a composite action which builds a vpm-compatible [Repo Listing](https://vcc.docs.vrchat.com/vpm/repos) based on the items you've added to your `source.json` file. you've created. In order to find all your releases and combine them into a listing, it checks out [another repository](https://github.com/vrchat-community/package-list-action) which has a [Nuke](https://nuke.build/) project which includes the VPM core lib to have access to its types and methods. This project will be expanded to include more functionality in the future - for now, the action just calls its `BuildRepoListing` target, which calls `RebuildHomePage` when it completes. If you wanted to make an action that just rebuilds the home page, you could call that directly instead - just copy the existing call and replace the target names.
+这是一个复合操作，它根据您添加到 `source.json` 文件中的项目构建与 vpm 兼容的 [Repo 列表](https://vcc.docs.vrchat.com/vpm/repos)。 你已经创造了。 为了找到您的所有版本并将它们合并到一个列表中，它会检查[另一个存储库](https://github.com/vrchat-community/package-list-action)，其中有一个[Nuke](https:// /nuke.build/) 项目，其中包含 VPM 核心库以访问其类型和方法。 该项目将在未来扩展以包含更多功能 - 目前，该操作仅调用其“BuildRepoListing”目标，该目标在完成时调用“RebuildHomePage”。 如果您想要执行仅重建主页的操作，您可以直接调用它 - 只需复制现有调用并替换目标名称即可。
