@@ -1,7 +1,7 @@
 {
     "name":"Example Listing",
     "id":"com.vrchat.example-listing",
-    "url":"https://vrchat-community.github.io/template-package-listing/index.json",
+    "url":"https://mmyo456.github.io/template-package-listing/index.json",
     "author":{
         "email":"developer@vrchat.com",
         "name":"VRChat",
@@ -9,7 +9,7 @@
     },
     "description":"Example listing of VRChat packages",
     "infoLink":{
-        "url":"http://github.com/vrchat-community/template-package-listing",
+        "url":"https://mmyo456.github.io/template-package-listing/",
         "text":"View on GitHub"
     },
     "bannerUrl":"banner.png",
