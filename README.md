@@ -6,7 +6,7 @@
 
 ## ▶ 开始使用
 
-* 按 [![使用此模板](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)]([https://github.com/vrchat- 社区/模板包列表/生成](https://github.com/mmyo456/template-package-listing/generate)）
+* 按 [![使用此模板late](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)](https://github.com/mmyo456/template-package-listing/generate)
 基于此模板启动一个新的 GitHub 项目，然后按照其中的说明进行操作。
    * 选择合适的存储库名称和描述。
    * 将可见性设置为“公开”。 您还可以选择“私人”并稍后更改。
