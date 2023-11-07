@@ -3,11 +3,11 @@
     "id":"com.vrchat.example-listing",
     "url":"https://mmyo456.github.io/template-package-listing/index.json",
     "author":{
-        "email":"developer@vrchat.com",
-        "name":"VRChat",
-        "url":"https://hello.vrchat.com"
+        "email":"ya@qmq.moe",
+        "name":"鸭鸭",
+        "url":"https://qmq.moe"
     },
-    "description":"Example listing of VRChat packages",
+    "description":"VRChat软件包列表示例",
     "infoLink":{
         "url":"https://mmyo456.github.io/template-package-listing/",
         "text":"View on GitHub"
